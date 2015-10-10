@@ -1,6 +1,5 @@
-export default class Sample {
-  foo(hoge) {
-    alert(hoge);
-    alert(hoge);
+export default class HelloWorld {
+  say(text) {
+    alert(text);
   }
-}ls
+}

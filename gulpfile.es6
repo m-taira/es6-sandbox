@@ -1,6 +1,6 @@
-var gulp = require('gulp')
-var webpack = require('gulp-webpack')
-var config = require('./config')
+var gulp = require('gulp');
+var webpack = require('gulp-webpack');
+var config = require('./config');
 
 gulp.task("build", () => {
   gulp.src(config.webpack.entry)
@@ -11,5 +11,5 @@ gulp.task("build", () => {
 gulp.src('src/*.html').pipe(gulp.dest('./build'));
 
 gulp.task('watch', () => {
-  gulp.watch(['./src/**/*.jade', './src/**/*.coffee'], ['build'])
+  gulp.watch(['./src/**/*.es6', './src/**/*.js'], ['build'])
 });

@@ -1,5 +1,5 @@
-import Sample from './main.es6';
+import HelloWorld from './main.es6';
 
-var s = new Sample();
+var hello = new HelloWorld();
 
-s.foo('Hello ES6');
+hello.say('Hello ES6 world');

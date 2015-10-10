@@ -52,9 +52,9 @@
 
 	var _mainEs62 = _interopRequireDefault(_mainEs6);
 
-	var s = new _mainEs62['default']();
+	var hello = new _mainEs62['default']();
 
-	s.foo('Hello ES6');
+	hello.say('Hello ES6 world');
 
 /***/ },
 /* 1 */
@@ -70,23 +70,22 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var Sample = (function () {
-	  function Sample() {
-	    _classCallCheck(this, Sample);
+	var HelloWorld = (function () {
+	  function HelloWorld() {
+	    _classCallCheck(this, HelloWorld);
 	  }
 
-	  _createClass(Sample, [{
-	    key: "foo",
-	    value: function foo(hoge) {
-	      alert(hoge);
-	      alert(hoge);
+	  _createClass(HelloWorld, [{
+	    key: "say",
+	    value: function say(text) {
+	      alert(text);
 	    }
 	  }]);
 
-	  return Sample;
+	  return HelloWorld;
 	})();
 
-	exports["default"] = Sample;
+	exports["default"] = HelloWorld;
 	module.exports = exports["default"];
 
 /***/ }
